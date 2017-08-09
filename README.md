@@ -4,6 +4,7 @@ This is the solution for [Dogs vs Cats competition in Kaggle](https://www.kaggle
 This model takes advantage of [Transfer Learning](http://cs231n.github.io/transfer-learning/) by using pretrained VGG model with vgg16 class and it's run in Keras (Theano as backend).
 
 **Directory structure**
+```
 fast-ai
 │   README.md
 │   requirements.txt
@@ -18,6 +19,7 @@ fast-ai
 |   
 |---dogs\_vs\_cats:
 |   |   data
+```
 
 **Data source**
 - [Dogs vs Cats](https://www.kaggle.com/c/dogs-vs-cats)
