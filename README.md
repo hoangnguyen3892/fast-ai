@@ -15,14 +15,16 @@ fast-ai
 |   |
 │---lessons
 |   
-|---dogs\_vs\_cats:
+|---dogs_vs_cats:
 |   |   data
 |   |   intermediate
 ```
 
 **Data source**
 - [Dogs vs Cats](https://www.kaggle.com/c/dogs-vs-cats)
-
+ + Create data path
+     ```mkdir ./dogs_vs_cats/data```
+ + Put train and test data to data path
 **Result**
 - Score: 0.10174
 - Ranking: 263/894
