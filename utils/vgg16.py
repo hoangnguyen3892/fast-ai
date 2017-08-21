@@ -53,8 +53,8 @@ class Vgg16():
         model = self.model
         for i in range(layers):
             model.add(ZeroPadding2D((1, 1)))
-            model.add(Conv2D(filters, 3, 3, activation='relu'))
-            #model.add(Conv2D(64, (3, 3), activation="relu"))
+            #model.add(Conv2D(filters, 3, 3, activation='relu'))
+            model.add(Conv2D(filters, (3, 3), activation="relu"))
         model.add(MaxPooling2D((2, 2), strides=(2, 2)))
 
 
@@ -66,7 +66,8 @@ class Vgg16():
 
     def create(self):
         model = self.model = Sequential()
-        model.add(Lambda(vgg_preprocess, input_shape=(3,224,224)))
+        #model.add(Lambda(vgg_preprocess, input_shape=(3,224,224)))
+        model.add(Lambda(vgg_preprocess, input_shape=(3,224,224), output_shape=(3,224,224)))
 
         self.ConvBlock(2, 64)
         self.ConvBlock(2, 128)
