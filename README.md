@@ -7,18 +7,17 @@ This model takes advantage of [Transfer Learning](http://cs231n.github.io/transf
 ```
 fast-ai
 │   README.md
-│   requirements.txt
 |
 |---utils
-│   │   train.py
-|   |   evaluate_next_activity_and_time.py
-│   │   evaluate_suffix_and_remaining_time.py
-│   │   calculate_accuracy_on_next_event.py
+│   │   utils.py
+|   |   vgg16.py
+│   │   vgg16bn.py
 |   |
 │---lessons
 |   
 |---dogs\_vs\_cats:
 |   |   data
+|   |   intermediate
 ```
 
 **Data source**
