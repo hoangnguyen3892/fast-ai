@@ -27,6 +27,3 @@ fast-ai
      ```mkdir ./dogs_vs_cats/data```
  + Put train and test data to data path
  
-**Result**
-- Score: 0.10174
-- Ranking: 263/894
